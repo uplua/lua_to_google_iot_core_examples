@@ -11,6 +11,7 @@
       source = ltn12.source.string(reqbody),
       headers = {
           ["content-type"] = "aplication/json",
+          -- The authorization Bearer jwt token needs to be regenerated after every 60 minutes. 
           ["authorization"] = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJpYXQiOjE1NjM3MjcwNjksImV4cCI6MTU2MzczMDY2OSwiYXVkIjoibHVhYmlncXVlcnkifQ.nCZzwpG5ZzU4HtcEWaZVDoY7hdKfCP0abAqPNFQwScxYpDL2lf3ZzwWNI9Z50Pd73ilfoWgH8xWF5BRQ1v_InQ",
           ["cache-control"] = "no-cache"  
       },
